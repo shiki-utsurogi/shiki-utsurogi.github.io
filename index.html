@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tools Hub</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- ヘッダー -->
+  <header class="bg-white shadow-md">
+    <div class="max-w-5xl mx-auto px-6 py-6 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">My Tools Hub</h1>
+      <nav>
+        <a href="#tools" class="text-gray-700 hover:text-indigo-600 font-medium">ツール一覧</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="bg-indigo-50">
+    <div class="max-w-5xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold text-indigo-700 mb-4">毎日の作業や遊び心に役立つツール集</h2>
+      <p class="text-gray-700 mb-8">シンプルで使いやすい計算・生成ツールを一つの場所にまとめました。</p>
+      <a href="#tools" class="inline-block bg-indigo-600 text-white px-6 py-3 rounded-lg shadow hover:bg-indigo-500 transition">ツール一覧を見る</a>
+    </div>
+  </section>
+
+  <!-- ツール一覧 -->
+  <section id="tools" class="max-w-5xl mx-auto px-6 py-16">
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">ツール一覧</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="/tools/geometry-generator" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-indigo-600 mb-2">幾何学模様ジェネレーター</h4>
+        <p class="text-gray-600">ランダムな幾何学模様を生成して画像として保存できます。</p>
+      </a>
+      <a href="/tools/investment-simulator" class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-bold text-indigo-600 mb-2">積立投資シミュレーター</h4>
+        <p class="text-gray-600">月々の積立額と利回りを入力して資産の推移を計算します。</p>
+      </a>
+      <!-- ここにツールを追加可能 -->
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="bg-white border-t mt-16">
+    <div class="max-w-5xl mx-auto px-6 py-6 text-center text-gray-500 text-sm">
+      &copy; 2025 My Tools Hub. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
